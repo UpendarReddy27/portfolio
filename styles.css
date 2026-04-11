@@ -106,42 +106,6 @@ a:hover {
   height: var(--header-h);
 }
 
-.header-brand {
-  display: flex;
-  align-items: center;
-  gap: 0.65rem;
-}
-
-.logo {
-  font-weight: 700;
-  font-size: 1.05rem;
-  letter-spacing: 0.08em;
-  color: var(--ink);
-  text-decoration: none;
-}
-
-.logo:hover {
-  color: var(--accent);
-}
-
-.design-switch {
-  font-family: var(--font-mono);
-  font-size: 0.6875rem;
-  font-weight: 500;
-  letter-spacing: 0.06em;
-  text-transform: uppercase;
-  padding: 0.25rem 0.5rem;
-  border: 1px solid var(--rule);
-  border-radius: 999px;
-  color: var(--muted);
-  text-decoration: none;
-}
-
-.design-switch:hover {
-  border-color: var(--accent);
-  color: var(--accent);
-}
-
 .nav-toggle {
   display: none;
   flex-direction: column;
@@ -164,6 +128,12 @@ a:hover {
   display: flex;
   align-items: center;
   gap: 1.35rem;
+}
+
+@media (min-width: 769px) {
+  .site-nav {
+    margin-left: auto;
+  }
 }
 
 .site-nav a {
